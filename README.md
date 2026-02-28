@@ -16,10 +16,26 @@ In large datasets, risky transactions can be missed during manual reviews. This 
 - pandas (data cleaning and analysis)
 - CSV files (sample transaction data)
 
-## How to run (coming next)
-This repo is being built step-by-step. Running instructions will be added after the first working version of the script is completed.
+## How to run
+1) Install Python 3.x  
+2) Download this repo and unzip it  
+3) Open a terminal in the project folder  
+4) Install dependencies:
+```bash
+python -m pip install -r requirements.txt
+```
 
-## Example output (coming next)
-Once the first version runs, this section will include:
-- A sample risk summary (counts and top flagged reasons)
-- A preview of flagged transactions
+## Example output
+
+
+```text
+Total transactions: 10
+Flagged transactions: 5
+
+Flag counts:
+- Missing amount: 1
+- Missing vendor: 1
+- Duplicate transactions: 2
+- High amount (>= 5000): 3
+```
+
