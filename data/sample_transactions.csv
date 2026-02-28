@@ -1,0 +1,11 @@
+date,amount,vendor,department,notes
+2026-02-01,24.50,Office Depot,Admin,printer paper
+2026-02-02,119.99,Amazon,IT,usb hubs
+2026-02-03,5400.00,QuickPay LLC,Finance,invoice payment
+2026-02-03,5400.00,QuickPay LLC,Finance,duplicate invoice payment
+2026-02-04,12.75,Starbucks,Admin,team coffee
+2026-02-05,9999.99,NewVendorX,Operations,unusual high amount
+2026-02-06,,Walmart,Admin,missing amount
+2026-02-07,65.00,,HR,missing vendor
+2026-02-08,310.10,Best Buy,IT,keyboard and mouse
+2026-02-09,2500.00,QuickPay LLC,Finance,after hours payment
