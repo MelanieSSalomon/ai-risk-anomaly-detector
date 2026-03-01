@@ -56,8 +56,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print(f"- Missing vendor: {int(df['flag_missing_vendor'].sum())}")
     print(f"- Duplicate transactions: {int(df['flag_duplicate'].sum())}")
     print(f"- High amount (>= 5000): {int(df['flag_high_amount'].sum())}")
-    print()
-
+    print(f"- Weekend transactions: {int(df['flag_weekend'].sum())}")
     if flagged > 0:
         print("Preview of flagged transactions:")
         cols = ["date", "amount", "vendor", "department", "notes",
