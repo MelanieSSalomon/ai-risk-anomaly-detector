@@ -57,7 +57,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print(f"- Duplicate transactions: {int(df['flag_duplicate'].sum())}")
     print(f"- High amount (>= 5000): {int(df['flag_high_amount'].sum())}")
     print(f"- Weekend transactions: {int(df['flag_weekend'].sum())}")
-    if flagged > 0:
+    if flagged > 4:
         print("Preview of flagged transactions:")
         cols = ["date", "amount", "vendor", "department", "notes",
                 "flag_missing_amount", "flag_missing_vendor", "flag_duplicate", "flag_high_amount"]
