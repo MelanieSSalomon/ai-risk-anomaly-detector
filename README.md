@@ -23,8 +23,10 @@ In large datasets, risky transactions can be missed during manual reviews. This 
 4) Install dependencies:
 ```bash
 python -m pip install -r requirements.txt
-```
 
+```Install dependencies: pip install pandas (or the sudo version we used).
+
+Run the app: python3 src/main.py.
 ## Example output
 
 
@@ -37,5 +39,6 @@ Flag counts:
 - Missing vendor: 1
 - Duplicate transactions: 2
 - High amount (>= 5000): 3
+- Weekend orders: 3
 ```
 
