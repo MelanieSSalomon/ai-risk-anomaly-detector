@@ -24,7 +24,7 @@ In large datasets, risky transactions can be missed during manual reviews. This 
 ```bash
 python -m pip install -r requirements.txt
 
-```Install dependencies: pip install pandas (or the sudo version we used).
+```Install dependencies: pip install pandas oe sudo apt.
 
 Run the app: python3 src/main.py.
 ## Example output
