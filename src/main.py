@@ -1,7 +1,11 @@
 import pandas as pd
 
-DATA_PATH = "data/sample_transactions.csv"
+import os
 
+# This finds the folder where main.py actually lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# This points to the data folder relative to main.py
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "sample_transactions.csv")
 
 def load_data(path: str) -> pd.DataFrame:
     """Load transaction data from CSV."""
