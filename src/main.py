@@ -41,16 +41,18 @@ def print_summary(df: pd.DataFrame) -> None:
     total = len(df)
     flagged = int(df["flag_any_risk"].sum())
 
+    missing_amount = int(df["flag_missing_amount"].sum())
+    missing_vendor = int(df["flag_missing_vendor"].sum())
+    duplicate_txns = int(df["flag_duplicate"].sum())
+    high_amount = int(df["flag_high_amount"].sum())
+    weekend_txns = int(df["flag_weekend"].sum())
+
     print("=== AI Risk Anomaly Detector (v0.1) ===")
     print(f"Total transactions: {total}")
     print(f"Flagged transactions: {flagged}")
-    print(f"- Weekend transactions: {int(df['flag_weekend'].sum())}") # Displays the new count
-    # ... rest of your print code ...
-
-def main() -> None:
-    df = load_data(DATA_PATH)
-    df_flagged = flag_risks(df)
-    print_summary(df_flagged)
-
-if __name__ == "__main__":
-    main()
+    print("\nFlag counts:")
+    print(f"- Missing amount: {missing_amount}")
+    print(f"- Missing vendor: {missing_vendor}")
+    print(f"- Duplicate transactions: {duplicate_txns}")
+    print(f"- High amount (>= 5000): {high_amount}")
+    print(f"- Weekend orders: {weekend_txns}")
