@@ -17,17 +17,23 @@ In large datasets, risky transactions can be missed during manual reviews. This 
 - CSV files (sample transaction data)
 
 ## How to run
-1) Install Python 3.x  
-2) Download this repo and unzip it  
-3) Open a terminal in the project folder  
-4) Install dependencies:
+
+1) Install Python 3.x
+2) Open a terminal in the project folder
+3) Install dependencies:
+
 ```bash
 python -m pip install -r requirements.txt
+```
 
-```Install dependencies: pip install pandas oe sudo apt.
+4)Run the app:
 
-Run the app: python3 src/main.py.
+```bash
+python3 src/main.py
+```
+
 ## Example output
+
 
 
 ```text
